@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: rgb(68,68,68);
+}
+
+header {
+  background-color: rgb(3,163,223);
+  color: white;
+  padding: 1rem 2.5rem;
+  height: 10rem;
+  font-size: 90%;
+
+}
+
+h1, h2, h3 {
+  font-family: 'Arial Bold', 'Arial', sans-serif;
+}
+
+.logo-container {
+  float: left;
+  width: 25%;
+  padding: 0 0 0.5rem 0;
+}
+
+img.header {
+  width: 100%;
+}
+
+h1 {
+  width: 100%;
+  font-size: 175%;
+}
+
+h4 {
+  position: static;
+  margin: 3rem 0 3rem 1.5rem;
+  float: left;
+  color: rgb(68,68,68);
+}
+
+nav {
+  position: relative;
+  margin-top: 1rem;
+  word-spacing: 0.5rem;
+}
+
+nav#head {
+  text-align: right;
+}
+
+nav#body{
+  text-align: center;
+  color: rgb(3,163,223);
+  margin: 1.5rem auto;
+  word-spacing: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  padding-top: 0.5rem;
+}
+
+p {
+  padding: 0.5rem 1rem;
+  font-size: 80%;
+  line-height: 125%;
+  text-align: justify;
+}
+
+blockquote {
+  color: rgb(3,163,223);
+  font-size: 80%;
+  line-height: 125%;
+  letter-spacing: 1px;
+  padding: 1rem;
+  text-align: justify;
+}
+
+/*.grid-container div {
+  border: 1px solid green;
+}*/
+
+/*Grid Positioning Rules*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+}
+
+.grid-head {
+  grid-column: 1 / span 8;
+  grid-row: 1 / span 1;
+}
+
+.grid-middle-75 {   /*Occupies middle 75% of total columns width*/
+  grid-column: 2 / 8;
+  grid-row: 2 / span 1;
+  padding: 2rem 0;
+}
+
+.grid-middle-100 {
+  grid-column: 1 / 9;
+  grid-row: 4 / span 1;
+}
+
+.grid-left-62 {     /*Occupies left 5/8 of total columns width*/
+  grid-column: 1 / 6;
+  grid-row: 3 / span 1;
+  margin: 0 1rem 2rem 1rem;
+  box-shadow: 2px 2px 8px rgb(68,68,68);
+  padding: 3rem 4rem 2rem 4rem;
+  background-color: rgb(3,163,223);
+  color: white;
+}
+
+.grid-right-38 {    /*Occupies right 3/8 of total columns width*/
+  grid-column: 6 / 9;
+  grid-row: 3 / span 1;
+  margin: 0 1rem 2rem 1rem;
+  box-shadow: 2px 2px 8px rgb(68,68,68);
+  padding: 3rem 2.5rem 2rem 2.5rem;
+  background-color: rgb(27,68,127);
+  color: white;
+}
+
+/*These grid elements no longer in use
+.grid-left-50 {    /*Occupies left 50% of total columns width
+  grid-column: 1 / 5;
+  grid-row: 3 / span 1;
+  margin: 0 0.5rem 3rem 1rem;
+  box-shadow: 2px 2px 8px rgb(68,68,68);
+  padding: 2.5rem 5rem;
+  background-color: rgb(3,163,223);
+  color: white;
+}
+
+.grid-right-50 {    /*Occupies right 50% of total columns width
+  grid-column: 5 / 9;
+  grid-row: 3 / span 1;
+  margin: 0 1rem 3rem 0.5rem;
+  box-shadow: 2px 2px 8px rgb(68,68,68);
+  padding: 2.5rem;
+  background-color: rgb(27,68,127);
+  color: white;
+}*/
+
+.grid-middle-100 {
+  grid-column: 1 / 9;
+  grid-row: 4 / span 1;
+  padding: 0 2rem;
+}
+
+.grid-middle-60 {
+  grid-column: 2 / 8;
+  grid-row: 5 / span 1;
+  padding: 1rem;
+  margin: 0 5%;
+  font-size: 85%;
+}
+
+.grid-foot {
+  grid-column: 1 / span 8;
+  grid-row: 6 / span 1;
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-pic {
+  grid-column: 1 / span 2;
+  grid-row: 1/ span 1;
+}
+
+.grid-bio {
+  grid-column: 3 / span 3;
+  grid-row: 1/ span 1;
+}
+
+/*Flexbox Rules*/
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.bio {
+  padding: 2rem 1rem 0 1rem;
+  width: 25%;
+  text-align: center;
+}
+
+.announcement {
+  width: 80%;
+  margin: 0 auto 1rem auto;
+  background-color: rgb(236,183,34);
+  padding: 0.5rem;
+  box-shadow: 2px 2px 8px rgb(68,68,68);
+  font-size: 85%;
+  text-align: center;
+}
+
+.video-content {
+  background-color: rgb(236,183,34);
+  border: 5px ridge rgb(3,163,223);
+  color: rgb(68,68,68);
+  padding: 0.5rem;
+  margin: 3rem auto 0 auto;
+}
+
+video {
+  position: relative;
+  width: 90%;
+  margin: 1rem auto;
+  display: block;
+}
+
+.central-article {
+  box-shadow: 2px 2px 8px rgb(68,68,68);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.bio-tile {
+  height: 30%;
+  background-color: rgb(27,68,127);
+  box-shadow: 2px 2px 8px rgb(68,68,68);
+  color: white;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.small-yellow {
+  background-color: rgb(27,68,127);
+  color: rgb(236,183,34);
+  text-transform: uppercase;
+  font-size: 60%;
+  margin: 1rem 0 0 0;
+}
+
+#calendar {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+#map {
+  width: 100%;
+  margin: 1rem auto;
+  border: 2px solid rgb(236,183,34);
+}
+
+.bio-pic{
+  width: 80%;
+}
+
+.bio-tile-pic {
+  width: 75%;
+  margin: 2rem auto;
+}
+
+.wrap-right {
+  float: left;
+  padding: 0 1rem;
+}
+
+.line-above {
+  border-top: 1px solid rgb(236,183,34);
+}
+
+figcaption {
+  font-size: 80%;
+  color: rgb(3,163,223);
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background-image: url("../images/footerImage.jpg");
+  background-size: cover;
+  background-color: rgb(68,68,68);
+  padding: 1.5rem 0 2rem 0;
+  color: white;
+  font-size: 90%;
+  text-align: center;
+  line-height: 200%;
+}
+
+footer p {
+  text-align: center;
+}

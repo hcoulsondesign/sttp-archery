@@ -3,26 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Learning Archery</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
   <body>
-    <header>
-      <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy logotype with an arrow in a bullseye">
-      <h2>Straight to the Point Archery</h2>
-      <h4>528 Nock Point Ln
-          <br>Tacoma, WA 98412
-          <br>archery-education@example.com
-          <br>(253)555-1010
-      </h4>
-      <nav>
-        <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="instructors.html">Our Instructors</a>
-      </nav>
-    </header>
+    <div class="grid-container">
+      <div class="grid-head">
+        <header>
+          <div class="logo-container" id="Top">
+            <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy logotype with an arrow in a bullseye" class="header">
+            <h1>Straight to the Point Archery</h1>
+          </div>
+          <h4>528 Nock Point Ln
+              <br>Tacoma, WA 98412
+              <br>archery-education@example.com
+              <br>(253)555-1010
+          </h4>
+          <nav id="head">
+            <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="instructors.html">Our Instructors</a>
+          </nav>
+        </header>
+      </div>
 
-    <section id="Top"> <!--Main body of webpage-->
-      <h1>Learning Archery</h1>
-      <p>Straight to the Point Archery is an indoor training facility with  28 shooting (14 -  10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms. We also have access to 26  additional  20 yard lanes  and an outdoor shooting field.  We offer several types of lessons to accommodate everyone from the first time archer to the professional archer. Once set up with proper fitting equipment, each archer will be given the basic safety instruction to start and will be introduced to various shooting techniques.</p>
+      <div class="grid-middle-75">
+        <h2>Learning Archery</h2>
+        <p>Straight to the Point Archery is an indoor training facility with  28 shooting (14 -  10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms. We also have access to 26  additional  20 yard lanes  and an outdoor shooting field.  We offer several types of lessons to accommodate everyone from the first time archer to the professional archer. Once set up with proper fitting equipment, each archer will be given the basic safety instruction to start and will be introduced to various shooting techniques.</p>
+      </div>
 
-      <section>
+      <div class="grid-left-62">
         <h2>Group Classes</h2> <!--Future CSS to make layout and appearance more logical-->
         <article>
           <h3>A101 Basic Archery</h3>
@@ -50,36 +57,52 @@
 		      <p>Schedule: Tuesdays and Thursdays, 5-6pm</p>
 		      <p>Prerequisite: A101/A102 or equivalent. Minimum age  7 years old.</p>
         </article>
-      </section>
+      </div>
 
-      <aside>
-        <h3>Private Lessons</h3>
+      <div class="grid-right-38">
+        <h2>Private Lessons</h2>
         <p>For those who prefer 1-on-1 instruction with our elite coaching staff:</p>
         <article>
-          <h4>Single Lesson</h4>
+          <h3>Single Lesson</h3>
           <p>1 hour of expert guidance by a USA Archery-certified coach</p>
           <p>Price: $50</p>
         </article>
 
         <article>
-          <h4>3 Lesson Package</h4>
+          <h3>3 Lesson Package</h3>
           <p>3 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</p>
           <p>Price: $140</p>
         </article>
 
         <article>
-          <h4>10 Lesson Package</h4>
+          <h3>10 Lesson Package</h3>
           <p>10 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</p>
           <p>Price: $380</p>
         </article>
-      </aside>
-    </section>
 
-    <footer>
-      <a href=#Top>Back to Top</a>
-      <h3>(253)555-1010</h3>
-      <h4>archery-education@example.com</h4>
-      <p>Copyright 2020 Straight to the Point Archery</p>
-    </footer>
+        <article class="video-content">
+          <h2>Online Instruction</h2>
+          <p>While COVID-19 has limited our ability to offer in-person classes, we have partnered with Triple Trouble Archery School to bring our students online technique instruction.</p>
+          <video width="200" controls poster="images/archery-poster.png">
+            <source src="media/draw-and-aim.mp4">
+            <source src="media/draw-and-aim.ogv">
+            Sorry your browser does not support video.
+          </video>
+        </article>
+      </div>
+
+      <div class="grid-middle-60">
+
+      </div>
+
+      <div class="grid-foot">
+        <footer>
+          <h3>(253)555-1010</h3>
+          <h3>archery-education@example.com</h3>
+          <a href=#Top>Back to Top</a>
+          <p>Copyright 2020 Straight to the Point Archery</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
