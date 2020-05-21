@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: rgb(3,163,223);
+  background-color: #037EAB; /*updated from rgb(3,163,223);*/
   color: white;
   padding: 1rem 2.5rem;
   height: 10rem;
@@ -40,7 +40,15 @@ h4 {
   position: static;
   margin: 3rem 0 3rem 1.5rem;
   float: left;
-  color: rgb(68,68,68);
+  color:rgb(68,68,68);
+  padding: 0.5rem;
+  background-color: rgb(236,183,34);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px white;
+}
+
+h5 {
+  overflow-wrap: break-word;
 }
 
 nav {
@@ -55,7 +63,7 @@ nav#head {
 
 nav#body{
   text-align: center;
-  color: rgb(3,163,223);
+  color: #037EAB; /*updated from rgb(3,163,223);*/
   margin: 1.5rem auto;
   word-spacing: 2rem;
 }
@@ -63,6 +71,15 @@ nav#body{
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 h2 {
@@ -81,7 +98,7 @@ p {
 }
 
 blockquote {
-  color: rgb(3,163,223);
+  color: #037EAB; /*updated from rgb(3,163,223);*/
   font-size: 80%;
   line-height: 125%;
   letter-spacing: 1px;
@@ -121,7 +138,7 @@ blockquote {
   margin: 0 1rem 2rem 1rem;
   box-shadow: 2px 2px 8px rgb(68,68,68);
   padding: 3rem 4rem 2rem 4rem;
-  background-color: rgb(3,163,223);
+  background-color: #037EAB; /*updated from rgb(3,163,223);*/
   color: white;
 }
 
@@ -134,27 +151,6 @@ blockquote {
   background-color: rgb(27,68,127);
   color: white;
 }
-
-/*These grid elements no longer in use
-.grid-left-50 {    /*Occupies left 50% of total columns width
-  grid-column: 1 / 5;
-  grid-row: 3 / span 1;
-  margin: 0 0.5rem 3rem 1rem;
-  box-shadow: 2px 2px 8px rgb(68,68,68);
-  padding: 2.5rem 5rem;
-  background-color: rgb(3,163,223);
-  color: white;
-}
-
-.grid-right-50 {    /*Occupies right 50% of total columns width
-  grid-column: 5 / 9;
-  grid-row: 3 / span 1;
-  margin: 0 1rem 3rem 0.5rem;
-  box-shadow: 2px 2px 8px rgb(68,68,68);
-  padding: 2.5rem;
-  background-color: rgb(27,68,127);
-  color: white;
-}*/
 
 .grid-middle-100 {
   grid-column: 1 / 9;
@@ -205,7 +201,7 @@ blockquote {
 }
 
 .bio {
-  padding: 2rem 1rem 0 1rem;
+  padding: 0.5rem 1rem;
   width: 25%;
   text-align: center;
 }
@@ -222,7 +218,7 @@ blockquote {
 
 .video-content {
   background-color: rgb(236,183,34);
-  border: 5px ridge rgb(3,163,223);
+  border: 5px ridge #037EAB; /*updated from rgb(3,163,223);*/
   color: rgb(68,68,68);
   padding: 0.5rem;
   margin: 3rem auto 0 auto;
@@ -293,7 +289,7 @@ video {
 
 figcaption {
   font-size: 80%;
-  color: rgb(3,163,223);
+  color: #037EAB; /*updated from rgb(3,163,223);*/
   text-align: center;
   font-weight: bold;
 }
